@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id= title>Survey Form</h1>
+    <p id="description">Thank you for filling this survey form.</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label><input id="name" type="text" required placeholder="Enter your name here" name="name-label" />
+      <label id="email-label">Email</label><input id="email" type="email" required placeholder="Enter your email here" />
+      <label id="number-label">Age (optional)</label><input id="number" type="number" min="13" max="130" placeholder="Select your age" />
+      <p>What is your favourite game genre out of the following:</p>
+      <select id="dropdown"><option value="">(select one)</option>
+      <option value="1">Platformer</option>
+      <option value="2">RPG</option>
+      <option value="3">Simulation</option>
+        </select>
+        <input type="radio" value="personal" name="account-type"></input><input type="radio" value="business" name="account-type"></input>
+      <input type="checkbox" value="sunny"></input>
+      <input type="checkbox" value="hot"></input>
+      <input type="submit" id="submit" value="Submit" />
+      <label for="bio">Any information we should know?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </form>
+    </body>
+    </html>
